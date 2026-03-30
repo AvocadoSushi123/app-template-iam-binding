@@ -1,6 +1,6 @@
 displayName: Workload Identity Binding
-  description: Grants GitHub Actions access to impersonate a GCP Service Account via WIF.
-  templateCategory: COMPONENT_TEMPLATE
+description: Grants GitHub Actions access to impersonate a GCP Service Account via WIF.
+templateCategory: COMPONENT_TEMPLATE
 
 terraformInput:
   - terraformInputVariable: service_account_id
