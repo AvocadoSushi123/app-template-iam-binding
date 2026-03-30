@@ -1,6 +1,6 @@
 spec:
   info:
-    version: 1.0.0
+    version: v9
     actuationTool:
       flavor: Terraform
       version: ">= 1.3"
