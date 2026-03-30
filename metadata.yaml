@@ -4,21 +4,19 @@ metadata:
   name: workload-identity-binding
 spec:
   info:
-    version: 12.0.0
+    title: Workload Identity Binding
+    version: 14.0.0
     actuationTool:
       flavor: Terraform
-      version: ">= 1.3"
+      version: ">= 1.3.0"
   interfaces: # Optional
     variables:
       - name: service_account_id
-        connections:
-          - source:
-              source: github.com/terraform-google/terraform-google-service-accounts
-              version: ">= 4.4"
-            spec:
-              outputExpr: email
+        description: "Service account ID"
+        varType: string
+        required: true
       - name: github_repo
-        description: "repository name"
+        description: "GitHub repository name"
         varType: string
         required: true
       - name: wif_pool
