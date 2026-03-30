@@ -2,21 +2,21 @@ displayName: Workload Identity Binding
   description: Grants GitHub Actions access to impersonate a GCP Service Account via WIF.
   templateCategory: COMPONENT_TEMPLATE
 
-  terraformInput:
-    - terraformInputVariable: service_account_id
-      displayName: Service Account ID
-      description: Full resource name or email of the Service Account.
-      isRequired: true
-      type: string
+terraformInput:
+  - terraformInputVariable: service_account_id
+    displayName: Service Account ID
+    description: Full resource name or email of the Service Account.
+    isRequired: true
+    type: string
 
-    - terraformInputVariable: github_repo
-      displayName: GitHub Repository
-      description: "The repository in 'org/repo' format."
-      isRequired: true
-      type: string
+  - terraformInputVariable: github_repo
+    displayName: GitHub Repository
+    description: "The repository in 'org/repo' format."
+    isRequired: true
+    type: string
 
-    - terraformInputVariable: wif_pool
-      displayName: WIF Pool
-      description: "Full name: projects/PROJECT_ID/locations/global/workloadIdentityPools/POOL_ID"
-      isRequired: true
-      type: string
+  - terraformInputVariable: wif_pool
+    displayName: WIF Pool
+    description: "Full name: projects/PROJECT_ID/locations/global/workloadIdentityPools/POOL_ID"
+    isRequired: true
+    type: string
