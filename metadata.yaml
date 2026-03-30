@@ -4,7 +4,7 @@ metadata:
   name: workload-identity-binding
 spec:
   info:
-    version: v10
+    version: v11.0.0
     actuationTool:
       flavor: Terraform
       version: ">= 1.3"
