@@ -11,7 +11,10 @@ spec:
       repo: https://github.com/AvocadoSushi123/app-template-iam-binding.git
       sourceType: git
       dir: .
-    version: 2.0.0
+    version: 4.0.0
+    actuationTool:
+      flavor: Terraform
+      version: ">= 1.0"
     description: Grants GitHub Actions access to impersonate a GCP Service Account via WIF.
   interfaces:
     variables:
