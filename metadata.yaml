@@ -13,17 +13,17 @@ spec:
       dir: .
     version: 2.0.0
     description: Grants GitHub Actions access to impersonate a GCP Service Account via WIF.
-interfaces:
-  variables:
-    - name: service_account_id
-      description: Full resource name or email of the Service Account.
-      varType: string
-      required: true
-    - name: github_repo
-      description: "The repository in 'org/repo' format."
-      varType: string
-      required: true
-    - name: wif_pool
-      description: "Full name: projects/PROJECT_ID/locations/global/workloadIdentityPools/POOL_ID"
-      varType: string
-      required: true
+  interfaces:
+    variables:
+      - name: service_account_id
+        description: Full resource name or email of the Service Account.
+        varType: string
+        required: true
+      - name: github_repo
+        description: "The repository in 'org/repo' format."
+        varType: string
+        required: true
+      - name: wif_pool
+        description: "Full name: projects/PROJECT_ID/locations/global/workloadIdentityPools/POOL_ID"
+        varType: string
+        required: true
